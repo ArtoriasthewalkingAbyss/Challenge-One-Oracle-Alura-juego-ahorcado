@@ -6,18 +6,19 @@ body{
     flex-flow: column wrap;
     justify-content: space-evenly;
     align-items: center;
+    gap: 1vh;
 }
 
 header {
     /* background-color: green; */
     width: 97vw;
-    height: auto;
+    height: 50px;
 }
 
 .main {
     /* background-color: brown; */
-    width: 98vw;
-    height: 82vh;
+    width: 86vw;
+    height: 84vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -25,7 +26,7 @@ header {
 }
 
 .sec-inicio-del-juego {
-    width: 97vw;
+    width: 86vw;
     display: flex;
     flex-flow: column wrap;
     justify-content: space-evenly;
@@ -33,27 +34,115 @@ header {
     gap: 5vh;
 }
 
-.btn-iniciar-juego {
-    width: 205px;
+#btn-iniciar-juego {
+    width: 20vw;
     height: 10vh;
+    min-width: 170px;
+    min-height: 50px;
 }
 
-.btn-agregar-nueva-palabra {
-    width: 100%;
+#btn-agregar-nueva-palabra {
+    width: 15vw;
     height: 7vh;
+    min-width: 160px;
+    min-height: 40px;
 }
 
 .sec-ahorcado {
     display: none;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vh;
+}
+
+.canvas{
+    background-color: aqua;
+    width: 70vw;
+    height: 75vh;
+}
+
+.div-btns-ahorcado{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+#btn-nuevo-juego {
+    width: 15vw;
+    height: 5vh;
+    min-width: 160px;
+    min-height: 40px;
+}
+
+#btn-desistir{
+    width: 15vw;
+    height: 5vh;
+    min-width: 160px;
+    min-height: 40px;
 }
 
 .sec-agregar-palabra {
     display: none;
 }
 
-footer {
-    background-color: coral;
-    width: 100px;
-    height: auto;
+.boton1 {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background:linear-gradient(to bottom, #ffec64 5%, #2cc798 100%);
+    background-color:#ffec64;
+    border-radius:6px;
+    border:1px solid #24ffb6;
+    cursor:pointer;
+    color:#333333;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffee66;
 }
 
+.boton1:hover {
+    background:linear-gradient(to bottom, #2cc798 5%, #ffec64 100%);
+    background-color:#2cc798;
+}
+
+.boton1:active {
+    position:relative;
+    top:1px;
+}
+
+.boton2 {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+	background:linear-gradient(to bottom, #ffec64 5%, #8a2ec7 100%);
+	background-color:#ffec64;
+	border-radius:6px;
+	border:1px solid #9626ff;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+}
+
+.boton2:hover {
+	background:linear-gradient(to bottom, #8a2ec7 5%, #ffec64 100%);
+	background-color:#8a2ec7;
+}
+
+.boton2:active {
+    position: relative;
+    top: 1px;
+}
+
+footer {
+    background-color: coral;
+    width: 99vw;
+    height: 3vh;
+    justify-content: center;
+    align-self: flex-end;
+}

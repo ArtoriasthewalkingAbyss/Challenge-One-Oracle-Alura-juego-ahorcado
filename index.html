@@ -15,11 +15,11 @@
     <main class="main">
         <section class="sec-inicio-del-juego">
             <div class="div-btn-iniciar-juego">
-                <input type="submit" value="Iniciar Juego" class="btn-iniciar-juego">
+                <button type="submit" id="btn-iniciar-juego" class="boton1" onclick="iniciarJuego()">Iniciar Juego</button>
             </div>
             
             <div class="div-btn-agregar-nueva-palabra">
-                <input type="submit" value="Agregar nueva palabra" class="btn-agregar-nueva-palabra">
+                <button type="submit" id="btn-agregar-nueva-palabra" class="boton2"  onclick="">Agregar nueva palabra</button>
             </div>
         </section>
 
@@ -27,7 +27,11 @@
             <div class="div-canvas">
                 <canvas class="canvas"></canvas>
             </div>
-            <div></div>
+
+            <div class="div-btns-ahorcado">
+                <button type="submit" id="btn-nuevo-juego" class="boton1" onclick="">Nuevo juego</button>
+                <button type="submit" id="btn-desistir" class="boton2" onclick="">Desistir</button>
+            </div>
         </section>
 
         <section class="sec-agregar-palabra">
@@ -35,7 +39,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="pie-de-paguina">
         <p>asd</p>
     </footer>
     <script src="src/js/cambioDePantalla.js"></script>
