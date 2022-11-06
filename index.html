@@ -19,7 +19,7 @@
             </div>
             
             <div class="div-btn-agregar-nueva-palabra">
-                <button type="submit" id="btn-agregar-nueva-palabra" class="boton2"  onclick="">Agregar nueva palabra</button>
+                <button type="submit" id="btn-agregar-nueva-palabra" class="boton2"  onclick="agregarPalabra()">Agregar nueva palabra</button>
             </div>
         </section>
 
@@ -35,13 +35,19 @@
         </section>
 
         <section class="sec-agregar-palabra">
+            <textarea name="" id="" class="texta-agregar-palabra "></textarea>
 
+            <div class="div-btns-agregar-palabra">
+                <button class="btn-guardar-empezar boton1">Guardar y empezar</button>
+
+                <button class="btn-cancelar boton2" onclick="cancelar()">Cancelar</button>
+            </div>
         </section>
     </main>
 
     <footer class="pie-de-paguina">
         <p>asd</p>
     </footer>
-    <script src="src/js/cambioDePantalla.js"></script>
+    <script type="module" src="src/js/cambioDePantalla.js"></script>
 </body>
 </html>
