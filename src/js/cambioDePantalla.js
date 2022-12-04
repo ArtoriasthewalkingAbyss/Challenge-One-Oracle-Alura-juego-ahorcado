@@ -1,4 +1,4 @@
-
+import { cancelar } from "./agregarPalabra.js";
 
 const ahorcado = document.querySelector(".sec-ahorcado");
 const inicio = document.querySelector(".sec-inicio-del-juego");
@@ -12,6 +12,7 @@ function iniciarJuego() {
 function agregarPalabra() {
     inicio.style.display = "none";
     agregar.style.display = "flex";
+    cancelar;
 };
 
 export {agregar, inicio, ahorcado, agregarPalabra, iniciarJuego}
