@@ -34,14 +34,14 @@ header {
     gap: 5vh;
 }
 
-#btn-iniciar-juego {
+.btn-iniciar-juego {
     width: 20vw;
     height: 10vh;
     min-width: 170px;
     min-height: 50px;
 }
 
-#btn-agregar-nueva-palabra {
+.btn-agregar-nueva-palabra {
     width: 15vw;
     height: 7vh;
     min-width: 160px;
@@ -69,14 +69,14 @@ header {
     gap: 25px;
 }
 
-#btn-nuevo-juego {
+.btn-nuevo-juego {
     width: 15vw;
     height: 5vh;
     min-width: 160px;
     min-height: 40px;
 }
 
-#btn-desistir{
+.btn-desistir{
     width: 15vw;
     height: 5vh;
     min-width: 160px;
