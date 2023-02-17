@@ -58,8 +58,8 @@ header {
 
 .canvas{
     background-color: aqua;
-    width: 70vw;
-    height: 75vh;
+    /*width: 70vw;
+    height: 75vh;*/
 }
 
 .div-btns-ahorcado{

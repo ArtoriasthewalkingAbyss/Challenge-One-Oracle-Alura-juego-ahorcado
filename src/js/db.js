@@ -1,3 +1,3 @@
-let palabras = ["asdasd","asdasdasd","sdasdasdasd","asdasdddad"];
+let palabras = ["oracle","asdasdasd","sdasdasdasd","asdasdddad"];
 
 export {palabras};

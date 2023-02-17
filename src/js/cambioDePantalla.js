@@ -1,4 +1,5 @@
-import { horca } from "./ahorcado.js";
+import { dibujarGiones, horca } from "./ahorcado.js";
+import { palabraSecreta } from "./palabra.js";
 
 const ahorcado = document.querySelector(".sec-ahorcado");
 const inicio = document.querySelector(".sec-inicio-del-juego");
@@ -13,9 +14,23 @@ const btnCancelar = document.querySelector(".btn-cancelar");
 btnInicio.addEventListener("click", () => {
     inicio.style.display = "none";
     ahorcado.style.display = "flex";
+    let palabra = palabraSecreta();
+    console.log(palabra);
     horca();
+    ahorcado.addEventListener("keypress", (event) => {
+        console.log("nya")
+        if (palabra.match(event.key)) {
+        console.log("holi");
+        console.log(palabra.match(event.key));
+        } else {
+            console.log("nop");
+            
+        }
+        console.log("adios");
+    })
 
 });
+
 
 btnAgregar.addEventListener("click", () => {
     inicio.style.display = "none";
