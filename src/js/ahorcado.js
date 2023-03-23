@@ -69,15 +69,24 @@ function dibujarGiones(palabra) {
     context.fillStyle = "#F3F5F6";
     context.strokeStyle = "#0A3871";
 
-    const ancho = 600/palabra.length;
+    const ancho = 1100/palabra.length;
     for (let i = 0; i < palabra.length; i++){
         
-        context.moveTo(300 + (ancho * i), 470);
-        context.lineTo(350 + (ancho * i), 470);
+        context.moveTo(100 + (ancho * i), 470);
+        context.lineTo(150 + (ancho * i), 470);
     }
     
     context.stroke();
     context.closePath();
+};
+
+function letras(palabra, letra, i) {
+    console.log("funcion letras");
+    context.font = 'bold 30px Arial';
+    context.fillStyle = "#000";
+    let ancho= 1100/palabra.length;
+    console.log(palabra[i]);
+    context.fillText(letra,115+(ancho*i), 460)
 }
 
-export {horca, canvas, dibujarGiones};
+export {horca, canvas, dibujarGiones, letras};

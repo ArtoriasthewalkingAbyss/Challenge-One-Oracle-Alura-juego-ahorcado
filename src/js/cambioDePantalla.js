@@ -1,4 +1,4 @@
-import { dibujarGiones, horca } from "./ahorcado.js";
+import { dibujarGiones, horca, letras } from "./ahorcado.js";
 import { palabraSecreta } from "./palabra.js";
 
 const ahorcado = document.querySelector(".sec-ahorcado");
@@ -17,11 +17,28 @@ btnInicio.addEventListener("click", () => {
     let palabra = palabraSecreta();
     console.log(palabra);
     horca();
-    ahorcado.addEventListener("keypress", (event) => {
-        console.log("nya")
-        if (palabra.match(event.key)) {
-        console.log("holi");
-        console.log(palabra.match(event.key));
+    document.addEventListener("keydown", (event) => {// porque no funciona en otro modulo por ejeplo tener este evento en otrafucion en otro modulo llamar a la funcion y que registre los eventos
+        console.log(event.key);
+        let mayuscula = event.key.toUpperCase()
+        let minuscula = event.key.toLowerCase()
+
+        if (palabra.match(mayuscula) || palabra.match(minuscula)) {
+            for (let i = 0; i < palabra.length; i++) {
+                console.log("dentro del for");
+
+                if (palabra[i] === mayuscula) {
+                    console.log("coincide mayuscula");
+                    
+                    letras(palabra, mayuscula, i);
+                } else if (palabra[i] === minuscula) {//no si hay una forma mejor de comprobar si es minucula y que dibuje lo que correspanda
+                    console.log("coincide minucula");
+                    
+                    letras(palabra, minuscula, i);
+                    
+                }
+                console.log("abajo de la coindicion del for");
+            }
+            console.log("fuera del for");
         } else {
             console.log("nop");
             
@@ -56,7 +73,4 @@ btnCancelar.addEventListener("click", () => {
 });
 
 
-/*.addEventListener("click", () => {
-
-});*/
 export {agregar, inicio, ahorcado};
